@@ -33,16 +33,9 @@ public class HelloService extends Service {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                for (int i = 0; i<5; i++){
-                    try {
-                        Thread.sleep(1000);
-                    }catch (Exception e){
-                    }
 
-                    if(isRunning){
-                        Log.i(serviceTag, "Service running");
-                    }
-                }
+                DownloaderAsync downloaderTask = new DownloaderAsync();
+                downloaderTask.execute();
 
                 stopSelf();
             }
