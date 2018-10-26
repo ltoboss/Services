@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Services</string>
+    <string name="title_home">Inicio</string>
+    <string name="title_dashboard">Tus apps</string>
+    <string name="title_notifications">Notificaciones</string>
+    <string name="btnText">Hacer</string>
+</resources>
